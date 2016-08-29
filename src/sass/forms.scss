@@ -14,7 +14,7 @@
 	transition: all .3s;
 	line-height: 1;
 
-	font-family: $mainFontFamily;
+	font-family: $pribambas;
 
 	cursor: pointer;
 
@@ -38,6 +38,17 @@
 		}
 	}
 
+	&--yellow{
+		background: $yellow;
+		color: $text;
+		&:hover{
+			background: lighten($yellow, 5%);
+		}
+		&:active{
+			background: darken($yellow, 5%);
+		}
+	}
+
 	&--m{
 		border-radius: 8px;
 		font-weight: 700;
@@ -46,10 +57,17 @@
 	}
 
 	&--l{
-		border-radius: 8px;
-		font-weight: 700;
-		font-size: 15px;
-		padding: 10px 20px 10px;
+		border-radius: 10px;
+		font-weight: 400;
+		font-size: 24px;
+		padding: 15px 40px 15px;
+	}
+
+	&--xl{
+		border-radius: 10px;
+		font-weight: 400;
+		font-size: 36px;
+		padding: 13px 20px 13px;
 	}
 
 	&--block{

@@ -1,9 +1,9 @@
 'use strict'
 
-import app from './app';
+import slider from './slider';
 
 document.addEventListener('DOMContentLoaded', () => {
 
-	app.init();
+	slider.init();
 
 });   

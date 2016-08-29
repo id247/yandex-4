@@ -1,21 +1,23 @@
 @charset "UTF-8";
 
-// @font-face {
-//     font-family: 'font';
-//     src: url('../fonts/fonr.woff') format('woff');
-//     font-weight: normal;
-//     font-style: normal;
-// }
+@font-face {
+    font-family: 'Pribambas';
+    src: url('../fonts/Pribambas.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-
-$mainFontFamily: Helvetica, sans-serif;
+$pribambas: Pribambas;
+$sans: 'PT Sans';
+$mainFontFamily: $sans, sans-serif;
 
 //
 //colors
 //
 
 
-$text: #1c1c1c;
+$text: #000;
+$yellow: #fbcc1c;
 
 //
 //medias
