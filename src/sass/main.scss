@@ -125,7 +125,6 @@
 .slide{
 	background: 50% 0 no-repeat;
 	background-size: cover;
-	padding: 50px;
 
 	&__outter{
 		display: table;
@@ -138,6 +137,12 @@
 		vertical-align: middle;
 	}
 
+	&__content{
+		max-width: 1050px;
+		padding: 50px;
+		margin: auto;
+	}
+
 	&__title{
 		font-size: 42px;
 		font-family: $pribambas;
@@ -145,7 +150,7 @@
 	}
 
 	&__text{
-		margin: 0 0 1em;		
+		margin: 0 0 1.2em;		
 	}
 }
 
@@ -166,6 +171,44 @@
 	&__button-placeholder{
 		max-width: 275px;
 		margin: 0 auto;
+	}
+
+	&__button{
+		
+	}
+}
+/* ==========================================================================
+ * slide-rocket
+ * ========================================================================== */
+
+.slide-bg{
+	background-color: #cde1fb;
+	text-align: center;
+	
+	&__content{
+		margin: 0 -30% 0 0; 
+	}
+
+	&__inner-content{
+		display: inline-block;
+		vertical-align: middle;
+		width: 38%;
+		text-align: left;
+	}
+
+	&__image-placeholder{
+		display: inline-block;
+		vertical-align: middle;
+		width: 60%;
+	}
+	
+	&__title{
+	}
+
+	&__text{
+	}
+
+	&__button-placeholder{
 	}
 
 	&__button{
