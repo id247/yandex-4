@@ -212,6 +212,14 @@
 		background-image: url(../images/bg/dnevnik.jpg);
 	}
 
+	&--bg{
+
+		@media all and (orientation:portrait) {
+			background-image: none;
+		}
+		
+	}
+
 	&__outter{
 		display: table;
 		width: 100%;
@@ -250,6 +258,17 @@
  * ========================================================================== */
 
 .slide-media{
+
+	&--bg{
+		.slide-media{
+			&__image-placeholder{
+				display: none;
+				@media all and (orientation:portrait) {
+					display: block;
+				}
+			}
+		}
+	}
 
 	&__content{
 		display: inline-block;
