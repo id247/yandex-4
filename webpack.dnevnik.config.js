@@ -8,7 +8,7 @@ var appSettings = path.join(__dirname, 'src/js/settings/settings-dnevnik.js');
 module.exports = {
 	cache: true,
 	entry: {
-		dnevnik: ['babel-polyfill', './src/js/index'],
+		dnevnik: ['./src/js/index'],
 	},
 	output: {
 		path: __dirname + '/production/assets/js',
