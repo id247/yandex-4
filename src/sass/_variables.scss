@@ -7,7 +7,15 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'MuseoCyrl';
+    src: url('../fonts/MuseoCyrl-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
 $pribambas: Pribambas;
+$museo: MuseoCyrl;
 $sans: 'Open Sans';
 $mainFontFamily: $sans, sans-serif;
 

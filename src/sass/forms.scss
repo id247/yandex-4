@@ -14,7 +14,6 @@
 	transition: all .3s;
 	line-height: 1;
 
-	font-family: $pribambas;
 
 	cursor: pointer;
 
@@ -41,6 +40,7 @@
 	&--yellow{
 		background: $yellow;
 		color: $text;
+		font-family: $pribambas;
 		&:hover{
 			background: lighten($yellow, 5%);
 		}
@@ -49,11 +49,45 @@
 		}
 	}
 
+	&--grey{
+		$startcolor: #d7d7d7;
+		$endcolor: #aeafa9;
+		font-family: $museo;
+		background: $startcolor;
+		background: linear-gradient(to bottom, $startcolor 0%, $endcolor 100%);
+		color: #000;
+		border: 0px;
+		box-shadow: 0 2px 3px rgba(0,0,0,.5);
+		text-shadow: 0 1px 0 rgba(255,255,255,.7);
+		position: relative;
+		transition: none;
+		&:hover{
+			background: lighten($startcolor, 5%);
+			background: linear-gradient(to bottom, lighten($startcolor, 5%) 0%, lighten($endcolor, 5%) 100%);
+		
+		}
+		&:active{
+			background: darken($startcolor, 2%);
+			background: linear-gradient(to bottom, darken($endcolor, 2%) 0%, darken($startcolor, 2%) 100%);
+			box-shadow: inset 0 2px 5px rgba(255,255,255,.3);
+			top: 2px;
+		}
+	}
+
 	&--m{
 		border-radius: 8px;
 		font-weight: 700;
 		font-size: 12px;
 		padding: 8px 20px 8px;
+	}
+
+	&--round{
+		border-radius: 23px;
+		font-weight: 400;
+		font-size: 18px;
+		//height: 46px;
+		font-weight: 700;
+		padding: 14px 26px 14px;
 	}
 
 	&--l{

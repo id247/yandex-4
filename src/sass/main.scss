@@ -17,7 +17,7 @@
 
 		&:before{
 			left: 0;
-			@include sprite($cloud-left);	
+			@include sprite($cloud-left);
 		}
 
 		&:after{
@@ -30,6 +30,28 @@
 			&:before,
 			&:after{
 				display: none;
+			}
+		}
+	}
+
+	&--parent{
+		.slide__title{
+			font-family: $museo;
+		}
+
+		.bx-prev{
+			left: 10px;
+			@include sprite($prev-round);	
+			@media(min-width: 1450px){
+				left: 150px;
+			}
+		}
+
+		.bx-next{
+			right: 10px;
+			@include sprite($next-round);
+			@media(min-width: 1450px){
+				right: 150px;
 			}
 		}
 	}
@@ -109,6 +131,25 @@
 				@include sprite($icon-rocket);
 			}
 		}
+
+		&--shield{
+			&:before{
+				@include sprite($icon-shield);
+			}
+		}
+
+		&--block{
+			&:before{
+				@include sprite($icon-block);
+				margin-top: 4px;
+			}
+		}
+
+		&--devices{
+			&:before{
+				@include sprite($icon-devices);
+			}
+		}
 	}
 }
 
@@ -126,6 +167,8 @@
 	&__item{
 		height: 100vh;
 		//min-height: 700px;
+		//
+		
 	}
 
 }
@@ -134,6 +177,25 @@
 .slide{
 	background: #cde1fb 50% 0 no-repeat;
 	background-size: cover;
+
+	&--kid{
+		background-image: url(../images/bg/kid.jpg);
+		background-color: #4a3c3f;		
+	}
+
+	&--parent{
+		background-image: url(../images/bg/parents.jpg);
+		background-color: #9f9da3;		
+	}
+
+	&--rocket{
+		background-image: url(../images/bg/rocket.jpg);
+		background-color: #509de8;
+	}
+
+	&--rocket-parent{
+		background-image: url(../images/bg/rocket-parent.jpg);
+	}
 
 	&__outter{
 		display: table;
@@ -149,10 +211,10 @@
 	}
 
 	&__content{
-		padding: 50px 100px;
+		padding: 50px 50px;
 		margin: auto;
-		@media(min-width: 1300px){
-			padding: 50px 50px;
+		@media(min-width: 1350px){
+			padding: 50px 0px;
 		}
 	}
 
@@ -173,19 +235,18 @@
  * ========================================================================== */
 
 .slide-media{
-	margin: 0 -25% 0 0;
 
 	&__content{
 		display: inline-block;
 		vertical-align: middle;
 		width: 38%;
-		margin: 0 1% 0 0;
+		margin: 0 1% 0 10%;
 	}
 
 	&__image-placeholder{
 		display: inline-block;
 		vertical-align: middle;
-		width: 58%;
+		width: 50%;
 		text-align: center;
 	}
 
@@ -215,42 +276,19 @@
  * slide-kid
  * ========================================================================== */
 
-.slide-kid{
-	background-image: url(../images/bg/kid.jpg);
-	background-color: #4a3c3f;
+.slide-home{
+
 	text-align: center;
 	color: #fff;
 	
 	&__title{
 		font-size: 54px;
+		margin: 0 0 .8em;
 	}
 
 	&__button-placeholder{
-		max-width: 275px;
+		max-width: 255px;
 		margin: 0 auto;
-	}
-
-	&__button{
-		
-	}
-}
-
-/* ==========================================================================
- * slide-rocket
- * ========================================================================== */
-
-.slide-rocket{
-	background-image: url(../images/bg/rocket.jpg);
-	background-color: #509de8;
-	
-	&__title{
-	}
-
-	&__text{
-		max-width: 55%;
-	}
-
-	&__button-placeholder{
 	}
 
 	&__button{
@@ -287,9 +325,15 @@
 .bx-prev{
 	left: 30px;
 	@include sprite($prev);
+	@media(min-width: 1350px){
+		left: 150px;
+	}
 }
 
 .bx-next{
 	right: 30px;
 	@include sprite($next);
+	@media(min-width: 1350px){
+		right: 150px;
+	}
 }
