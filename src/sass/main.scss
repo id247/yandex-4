@@ -24,6 +24,14 @@
 			right: 0;
 			@include sprite($cloud-right);	
 		}
+
+
+		@media (max-width: 1000px) {
+			&:before,
+			&:after{
+				display: none;
+			}
+		}
 	}
 
 	&__slider{
@@ -239,7 +247,7 @@
 	}
 
 	&__text{
-		max-width: 540px;
+		max-width: 55%;
 	}
 
 	&__button-placeholder{
