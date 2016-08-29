@@ -45,6 +45,9 @@
 			@media(min-width: 1450px){
 				left: 150px;
 			}
+			@media(max-width: 766px){
+				transform: scale(.5);
+			}
 		}
 
 		.bx-next{
@@ -52,6 +55,9 @@
 			@include sprite($next-round);
 			@media(min-width: 1450px){
 				right: 150px;
+			}
+			@media(max-width: 766px){
+				transform: scale(.5);
 			}
 		}
 	}
@@ -74,16 +80,20 @@
  * ========================================================================== */
 
 .nav{
+	@media(max-width: 766px){
+		display: none;
+	}
 
 	&__list{
 		text-align: center;
+		margin: 0 -30px;
 	}
 
 	&__item{
 		display: inline-block;
 		vertical-align: bottom;
 		margin: 0 10px 0;
-		width: 180px;
+		width: 160px;
 	}
 
 	&__href{
@@ -217,7 +227,7 @@
 		@media all and (orientation:portrait) {
 			background-image: none;
 		}
-		
+
 	}
 
 	&__outter{
@@ -245,7 +255,10 @@
 	&__title{
 		font-size: 42px;
 		font-family: $pribambas;
-		margin: 0 0 .5em;
+		margin: 0 0 .5em;	
+		@media(max-width: 766px){
+			font-size: 25px;
+		}
 	}
 
 	&__text{
@@ -318,6 +331,9 @@
 	&__title{
 		font-size: 54px;
 		margin: 0 0 .8em;
+		@media(max-width: 766px){
+			font-size: 32px;
+		}
 	}
 
 	&__button-placeholder{
