@@ -34,7 +34,7 @@
 		}
 	}
 
-	&--parent{
+	&--adults{
 		.slide__title{
 			font-family: $museo;
 		}
@@ -150,6 +150,12 @@
 				@include sprite($icon-devices);
 			}
 		}
+
+		&--dnevnik{
+			&:before{
+				@include sprite($icon-dnevnik);
+			}
+		}
 	}
 }
 
@@ -188,6 +194,11 @@
 		background-color: #9f9da3;		
 	}
 
+	&--teachers{
+		background-image: url(../images/bg/teachers.jpg);
+		background-color: #dbdbca;		
+	}
+
 	&--rocket{
 		background-image: url(../images/bg/rocket.jpg);
 		background-color: #509de8;
@@ -195,6 +206,10 @@
 
 	&--rocket-parent{
 		background-image: url(../images/bg/rocket-parent.jpg);
+	}
+
+	&--dnevnik{
+		background-image: url(../images/bg/dnevnik.jpg);
 	}
 
 	&__outter{
