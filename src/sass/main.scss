@@ -117,7 +117,7 @@
 
 	&__item{
 		height: 100vh;
-		min-height: 700px;
+		//min-height: 700px;
 	}
 
 }
@@ -141,8 +141,11 @@
 	}
 
 	&__content{
-		padding: 50px;
+		padding: 50px 100px;
 		margin: auto;
+		@media(min-width: 1300px){
+			padding: 50px 50px;
+		}
 	}
 
 
@@ -181,6 +184,22 @@
 	&__image{
 		max-width: 100%;
 		height: auto;
+	}
+
+	@media all and (orientation:portrait) {
+		margin: 0;
+	
+		&__content{
+			display: block;
+			margin: 0 0 50px;
+			width: auto;
+		}
+
+		&__image-placeholder{
+			display: block;
+			text-align: center;
+			width: auto;
+		}
 	}
 }
 
