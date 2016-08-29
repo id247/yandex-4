@@ -44,6 +44,11 @@
  * ========================================================================== */
 
 .nav{
+
+	&--white{
+		color: #fff;
+	}
+
 	&__list{
 		text-align: center;
 	}
@@ -58,7 +63,6 @@
 	&__href{
 		font-size: 14px;
 		position: relative;
-		color: #fff;
 		display: block;
 		padding: 60px 0 0;
 
@@ -117,19 +121,22 @@
 
 	&__item{
 		height: 100vh;
+		min-height: 700px;
 	}
 
 }
  
 
 .slide{
-	background: 50% 0 no-repeat;
+	background: #cde1fb 50% 0 no-repeat;
 	background-size: cover;
 
 	&__outter{
 		display: table;
 		width: 100%;
+		max-width: 1050px;
 		height: 100%;
+		margin: auto;
 	}
 
 	&__inner{
@@ -138,10 +145,10 @@
 	}
 
 	&__content{
-		max-width: 1050px;
 		padding: 50px;
 		margin: auto;
 	}
+
 
 	&__title{
 		font-size: 42px;
@@ -151,6 +158,33 @@
 
 	&__text{
 		margin: 0 0 1.2em;		
+	}
+}
+
+/* ==========================================================================
+ * slide-media
+ * ========================================================================== */
+
+.slide-media{
+	margin: 0 -25% 0 0;
+
+	&__content{
+		display: inline-block;
+		vertical-align: middle;
+		width: 37%;
+		margin: 0 2% 0 0;
+	}
+
+	&__image-placeholder{
+		display: inline-block;
+		vertical-align: middle;
+		width: 58%;
+		text-align: center;
+	}
+
+	&__image{
+		max-width: 100%;
+		height: auto;
 	}
 }
 
@@ -182,25 +216,25 @@
  * ========================================================================== */
 
 .slide-bg{
-	background-color: #cde1fb;
-	text-align: center;
 	
-	&__content{
-		margin: 0 -30% 0 0; 
+	&__title{
 	}
 
-	&__inner-content{
-		display: inline-block;
-		vertical-align: middle;
-		width: 38%;
-		text-align: left;
+	&__text{
 	}
 
-	&__image-placeholder{
-		display: inline-block;
-		vertical-align: middle;
-		width: 60%;
+	&__button-placeholder{
 	}
+
+	&__button{
+		
+	}
+}
+/* ==========================================================================
+ * slide-bell
+ * ========================================================================== */
+
+.slide-bell{
 	
 	&__title{
 	}
