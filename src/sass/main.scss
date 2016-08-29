@@ -5,6 +5,7 @@
 
 .container{
 	position: relative;
+	overflow: hidden;
 
 	&--kids{
 		&:before,
@@ -60,6 +61,9 @@
 				transform: scale(.5);
 			}
 		}
+	}
+
+	&__content{
 	}
 
 	&__slider{
