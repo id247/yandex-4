@@ -87,7 +87,7 @@
 
 	transition: all .3s;
 
-	@media(max-width: 766px){
+	@media(max-width: 1000px){
 		display: none;
 	}
 
@@ -188,8 +188,8 @@
 	}
 
 	&__item{
-		height: 100vh;
-		//min-height: 700px;
+		//height: 100vh;
+		//min-height: 100vh;
 		//
 		
 	}

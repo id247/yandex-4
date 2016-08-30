@@ -33,6 +33,10 @@ export default (function (window, document, $){
 		$navHrefs = $('.js-nav-href');
 	}
 
+	function styles(){
+		$slides.css('height', '100vh');
+	}
+
 	function events(){
 		$navHrefs.on('click', function(e){
 			e.preventDefault();
@@ -163,7 +167,11 @@ export default (function (window, document, $){
 
 
 	function init(){
+		if (isMobile){
+			return false;
+		}
 		getDOM();
+		styles();
 		slider();
 		events();
 		scroll();
