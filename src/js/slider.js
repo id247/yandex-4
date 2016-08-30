@@ -34,7 +34,9 @@ export default (function (window, document, $){
 	}
 
 	function styles(){
-		$slides.css('height', '100vh');
+		if ($(document).width() > 900 ){
+			$slides.css('height', '100vh');
+		}
 	}
 
 	function events(){
@@ -167,7 +169,7 @@ export default (function (window, document, $){
 
 
 	function init(){
-		if (isMobile){
+		if ($(document).width() <= 900 ){
 			return false;
 		}
 		getDOM();
