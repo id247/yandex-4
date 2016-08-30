@@ -51,7 +51,6 @@ export default (function (window, document, $){
 
 	function navColor(currentSlideIndex){
 		const navColor = $slides.eq(currentSlideIndex).data('nav-color');
-		console.log(currentSlideIndex, navColor);
 		
 		if (navColor){
 			$nav.css('color', navColor);

@@ -130,7 +130,8 @@ gulp.task('html', function(callback){
 			prefix: '@@',
 			basepath: '@file',
 			context: {
-				'server': server
+				server: server,
+				downloadLink: 'http://download.cdn.yandex.net/downloadable_soft/browser/350734/Yandex.exe?vid=30&hash=8e5dc90ddbc9f3a7884c1757aa6ebc0c&.exe',
 			},
 			indent: true
 		}))
